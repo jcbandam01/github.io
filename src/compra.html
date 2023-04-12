@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Compra en linea</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		body {
+			background-color: #F6EFEF;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			color: #58b7ee;
+			font-size: 2.5em;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		form {
+			background-color: #98c8e7;
+			border-radius: 10px;
+			padding: 20px;
+			width: 50%;
+			margin: 0 auto;
+			box-shadow: 0px 0px 10px #000000;
+		}
+		label {
+			color: #8F8F8F;
+			display: block;
+			font-size: 1.2em;
+			margin-bottom: 5px;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="number"],
+		input[type="month"],
+		select {
+			background-color: #f3ebeb;
+			border: none;
+			border-radius: 5px;
+			color: #f3ebeb;
+			font-size: 1.2em;
+			padding: 10px;
+			margin-bottom: 10px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #1866db;
+			border: none;
+			border-radius: 5px;
+			color: #FFFFFF;
+			font-size: 1.2em;
+			padding: 10px;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
+		}
+		input[type="submit"]:hover {
+			background-color: #1d6936;
+		}
+	</style>	
+</head>
+<body>
+	<h1>Compra en linea</h1>
+	<form action="procesar_compra.php" method="post">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre"><br><br>
+		
+		<label for="correo">Correo electronico:</label>
+		<input type="email" id="correo" name="correo"><br><br>
+		
+		<label for="direccion">Direccion:</label>
+		<input type="text" id="direccion" name="direccion"><br><br>
+		
+		<label for="producto">Producto:</label>
+		<select id="producto" name="producto">
+			<option value="0">Seleccione un producto</option>
+			<option value="1">Producto 1</option>
+			<option value="2">Producto 2</option>
+			<option value="3">Producto 3</option>
+		</select><br><br>
+		
+		<label for="cantidad">Cantidad:</label>
+		<input type="number" id="cantidad" name="cantidad"><br><br>
+		
+		<label for="tarjeta">Tarjeta de credito:</label>
+		<input type="text" id="tarjeta" name="tarjeta"><br><br>
+		
+		<label for="fecha">Fecha de vencimiento:</label>
+		<input type="month" id="fecha" name="fecha"><br><br>
+		
+		<input type="submit" value="Comprar">
+	</form>
+	<script>
+		$(document).ready(function() {
+			$("form").submit(function(event) {
+				event.preventDefault();
+				alert("¡Gracias por su compra!");
+			});
+		});
+	</script>
+	 <a href="../src/compre_equipo_ahora.html"><button>Volver a Comprar</button></a>
+</body>
+</html>

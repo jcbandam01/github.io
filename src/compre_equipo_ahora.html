@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de ordenadores</title>
+    <style>
+    
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+        }
+        
+       
+        .item {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        
+       
+        .item h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+     
+        .item img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        
+      
+        .item p {
+            font-size: 18px;
+            color: #666;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        
+
+        .item button {
+            background-color: #ff7f50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .item button:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h2>Ordenador 1</h2>
+            <img src="../img/edit-pc-school.jpg">
+            <p>1000€</p>
+            <a href="../src/compra.html"><button>Comprar</button></a>
+        </div>
+        <div class="item">
+            <h2>Ordenador 2</h2>
+            <img src="../img/hp-all-in-one.jpg">
+            <p>1500€</p>
+             <a href="../src/compra.html"><button>Comprar</button></div></a>
+        </div>
+        <div class="item">
+            <h2>Ordenador 3</h2>
+            <img src="../img/los_mejores_ordenadores_portatiles_para_estudiar_52631_600.jpg">
+            <p>2000€</p>
+            <a href="../src/compra.html"><button>Comprar</button></a>
+        </div>
+    </div>
+    <a href="../index.html"><button>Volver a la pagina de inicio</button></a>
+</body>
+</html>
